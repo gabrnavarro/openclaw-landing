@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="640" height="640" viewBox="0 0 640 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(320 240) rotate(90) scale(360)">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F4F7FF"/>
+    </radialGradient>
+
+    <radialGradient id="skin" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(320 290) rotate(90) scale(210)">
+      <stop offset="0" stop-color="#FFDCC8"/>
+      <stop offset="0.55" stop-color="#F6C9AF"/>
+      <stop offset="1" stop-color="#EFB59A"/>
+    </radialGradient>
+
+    <linearGradient id="hair" x1="220" y1="165" x2="420" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1F2937"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+
+    <radialGradient id="cheek" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(255 355) rotate(90) scale(55)">
+      <stop offset="0" stop-color="#FF8FA3" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#FF8FA3" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="cheek2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(385 355) rotate(90) scale(55)">
+      <stop offset="0" stop-color="#FF8FA3" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#FF8FA3" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="softShadow" x="0" y="0" width="640" height="640" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="22" stdDeviation="18" flood-color="#0B1220" flood-opacity="0.14"/>
+    </filter>
+
+    <filter id="faceShadow" x="110" y="110" width="420" height="470" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0B1220" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- soft card background -->
+  <rect x="0" y="0" width="640" height="640" rx="180" fill="url(#bg)"/>
+
+  <!-- Animoji head group -->
+  <g filter="url(#softShadow)">
+    <!-- outer subtle ring -->
+    <circle cx="320" cy="320" r="246" fill="#FFFFFF"/>
+    <circle cx="320" cy="320" r="240" fill="#F8FAFF"/>
+
+    <!-- head -->
+    <g filter="url(#faceShadow)">
+      <path d="M320 156c-93 0-168 75-168 168v52c0 108 86 196 168 196s168-88 168-196v-52c0-93-75-168-168-168Z" fill="url(#skin)"/>
+
+      <!-- highlights -->
+      <path d="M210 260c24-70 82-104 142-104 14 0 27 2 39 6" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="18" stroke-linecap="round"/>
+
+      <!-- hair cap -->
+      <path d="M170 305c0-106 76-175 165-175 71 0 126 35 152 94-26-18-58-22-82-16-22 6-38 22-61 22-19 0-35-14-60-14-66 0-112 36-114 89Z" fill="url(#hair)"/>
+
+      <!-- eyebrows -->
+      <path d="M238 340c22-18 52-18 76 0" stroke="#0B1220" stroke-opacity="0.45" stroke-width="12" stroke-linecap="round"/>
+      <path d="M326 340c22-18 52-18 76 0" stroke="#0B1220" stroke-opacity="0.45" stroke-width="12" stroke-linecap="round"/>
+
+      <!-- eyes (big, animoji-ish) -->
+      <g>
+        <ellipse cx="275" cy="390" rx="44" ry="52" fill="#FFFFFF"/>
+        <ellipse cx="365" cy="390" rx="44" ry="52" fill="#FFFFFF"/>
+
+        <circle cx="275" cy="402" r="20" fill="#111827"/>
+        <circle cx="365" cy="402" r="20" fill="#111827"/>
+
+        <circle cx="269" cy="392" r="6" fill="#FFFFFF" opacity="0.9"/>
+        <circle cx="359" cy="392" r="6" fill="#FFFFFF" opacity="0.9"/>
+
+        <circle cx="281" cy="414" r="3" fill="#FFFFFF" opacity="0.5"/>
+        <circle cx="371" cy="414" r="3" fill="#FFFFFF" opacity="0.5"/>
+      </g>
+
+      <!-- cheeks -->
+      <circle cx="255" cy="430" r="55" fill="url(#cheek)"/>
+      <circle cx="385" cy="430" r="55" fill="url(#cheek2)"/>
+
+      <!-- nose -->
+      <path d="M320 420c-10 14-10 26 0 36" stroke="#8A4B3A" stroke-opacity="0.25" stroke-width="10" stroke-linecap="round"/>
+
+      <!-- mouth -->
+      <path d="M270 485c18 20 82 20 100 0" stroke="#8A4B3A" stroke-width="14" stroke-linecap="round"/>
+      <path d="M282 500c26 14 50 14 76 0" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="10" stroke-linecap="round"/>
+
+      <!-- chin shadow -->
+      <path d="M220 520c22 40 60 64 100 64s78-24 100-64" stroke="#0B1220" stroke-opacity="0.08" stroke-width="26" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

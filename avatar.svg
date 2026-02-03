@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="520" height="520" viewBox="0 0 520 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Soft background blob -->
+  <defs>
+    <radialGradient id="g" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(260 210) rotate(90) scale(270)">
+      <stop offset="0" stop-color="#EAF2FF"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </radialGradient>
+    <linearGradient id="phone" x1="180" y1="70" x2="340" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1220"/>
+      <stop offset="1" stop-color="#1B2538"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="520" height="520" rx="140" fill="url(#g)"/>
+
+  <!-- iPhone-like device -->
+  <rect x="154" y="56" width="212" height="408" rx="44" fill="url(#phone)"/>
+  <rect x="168" y="74" width="184" height="372" rx="36" fill="#0B0F16"/>
+
+  <!-- Dynamic island -->
+  <rect x="224" y="92" width="72" height="18" rx="9" fill="#111827"/>
+
+  <!-- Memoji-ish face -->
+  <g transform="translate(168 116)">
+    <rect x="0" y="0" width="184" height="330" rx="36" fill="#0B0F16"/>
+
+    <!-- subtle glow -->
+    <circle cx="92" cy="150" r="120" fill="#0B1220"/>
+    <circle cx="92" cy="150" r="118" fill="#0C1324"/>
+
+    <!-- head -->
+    <path d="M52 214c-22-18-34-45-34-78 0-62 42-112 74-112s74 50 74 112c0 33-12 60-34 78-10 8-24 14-40 14s-30-6-40-14Z" fill="#F6D2B8"/>
+
+    <!-- hair -->
+    <path d="M30 118c6-48 42-84 92-84 44 0 76 24 88 60-8-10-22-18-38-18-18 0-30 9-42 9-10 0-20-7-34-7-36 0-62 20-66 40Z" fill="#1F2937"/>
+
+    <!-- eyes -->
+    <circle cx="68" cy="142" r="8" fill="#111827"/>
+    <circle cx="116" cy="142" r="8" fill="#111827"/>
+    <path d="M60 134c6-8 16-10 24-6" stroke="#111827" stroke-width="6" stroke-linecap="round" opacity="0.35"/>
+    <path d="M108 128c8-6 18-4 24 4" stroke="#111827" stroke-width="6" stroke-linecap="round" opacity="0.35"/>
+
+    <!-- mouth -->
+    <path d="M72 176c10 10 30 10 40 0" stroke="#8A4B3A" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- hoodie collar -->
+    <path d="M24 310c20-28 44-42 68-42s48 14 68 42v20H24v-20Z" fill="#0F172A"/>
+    <path d="M70 270c6 10 10 18 22 18s16-8 22-18" stroke="#24324A" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- tiny controller icon on hoodie -->
+    <g transform="translate(72 304)" opacity="0.9">
+      <rect x="0" y="0" width="40" height="18" rx="9" fill="#111827"/>
+      <circle cx="12" cy="9" r="3" fill="#E5E7EB"/>
+      <circle cx="28" cy="7" r="2" fill="#93C5FD"/>
+      <circle cx="32" cy="11" r="2" fill="#A7F3D0"/>
+      <rect x="18" y="8" width="6" height="2" rx="1" fill="#E5E7EB"/>
+      <rect x="20" y="6" width="2" height="6" rx="1" fill="#E5E7EB"/>
+    </g>
+  </g>
+
+  <!-- tiny highlights -->
+  <path d="M330 92c14 24 22 54 22 88 0 132-74 240-164 240-16 0-32-4-46-10" stroke="#93C5FD" stroke-opacity="0.25" stroke-width="10" stroke-linecap="round"/>
+</svg>
