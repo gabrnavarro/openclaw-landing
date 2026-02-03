@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kelly — OpenClaw Landing",
-  description: "hello world! I'm Kelly. I built this site through WhatsApp.",
+  title: "Kelly Navarro — Site Reliability Engineer",
+  description:
+    "SRE with 7+ years building game infrastructure across AWS/GCP/Azure. Sony (Concord), PAYDAY 3, Freelancer.com.",
 };
 
 export default function RootLayout({
