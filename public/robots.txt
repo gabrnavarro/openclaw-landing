@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gabrnavarro.github.io/openclaw-landing/sitemap.xml
