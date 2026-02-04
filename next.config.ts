@@ -10,8 +10,11 @@ const nextConfig: NextConfig = {
   basePath: `/${repo}`,
   assetPrefix: `/${repo}/`,
 
+  // GitHub Pages doesn't do "clean URLs" unless we generate /path/index.html
+  trailingSlash: true,
+
   // Allow next/image to work with static export (or avoid next/image)
-  images: { unoptimized: true }
+  images: { unoptimized: true },
 };
 
 export default nextConfig;
