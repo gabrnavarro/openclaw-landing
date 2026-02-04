@@ -1,0 +1,66 @@
+1:"$Sreact.fragment"
+2:I[79520,["/openclaw-landing/_next/static/chunks/744355e03808d4c7.js"],""]
+3:I[39756,["/openclaw-landing/_next/static/chunks/ff1a16fafef87110.js","/openclaw-landing/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
+4:I[37457,["/openclaw-landing/_next/static/chunks/ff1a16fafef87110.js","/openclaw-landing/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
+6:I[97367,["/openclaw-landing/_next/static/chunks/ff1a16fafef87110.js","/openclaw-landing/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
+7:"$Sreact.suspense"
+9:I[97367,["/openclaw-landing/_next/static/chunks/ff1a16fafef87110.js","/openclaw-landing/_next/static/chunks/d2be314c3ece3fbe.js"],"ViewportBoundary"]
+b:I[97367,["/openclaw-landing/_next/static/chunks/ff1a16fafef87110.js","/openclaw-landing/_next/static/chunks/d2be314c3ece3fbe.js"],"MetadataBoundary"]
+d:I[68027,[],"default"]
+:HL["/openclaw-landing/_next/static/chunks/8c9da6df9e0ce34d.css","style"]
+:HL["/openclaw-landing/_next/static/media/797e433ab948586e-s.p.dbea232f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/openclaw-landing/_next/static/media/caa3a2e1cccd8315-s.p.853070df.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"P":null,"b":"nFOSoJDs3XpDjIylZewbO","c":["","blog","websockets"],"q":"","i":false,"f":[[["",{"children":["blog",{"children":[["slug","websockets","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/openclaw-landing/_next/static/chunks/8c9da6df9e0ce34d.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/openclaw-landing/_next/static/chunks/744355e03808d4c7.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__variable antialiased","children":[["$","$L2",null,{"id":"ld-person","type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Kelly Navarro\",\"jobTitle\":\"Site Reliability Engineer\",\"url\":\"https://gabrnavarro.github.io/openclaw-landing/\"}"}}],["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L5",[["$","script","script-0",{"src":"/openclaw-landing/_next/static/chunks/7c92e96509cd355e.js","async":true,"nonce":"$undefined"}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],{},null,false,false]},null,false,false]},null,false,false]},null,false,false],["$","$1","h",{"children":[null,["$","$L9",null,{"children":"$La"}],["$","div",null,{"hidden":true,"children":["$","$Lb",null,{"children":["$","$7",null,{"name":"Next.Metadata","children":"$Lc"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],false]],"m":"$undefined","G":["$d",[]],"S":true}
+e:I[22016,["/openclaw-landing/_next/static/chunks/744355e03808d4c7.js","/openclaw-landing/_next/static/chunks/7c92e96509cd355e.js"],""]
+f:Taf3,<p>Recently, I joined a game in Crowdpurr, an online trivia game app where people can answer trivia quesitons in multiple choice format. With everyone working from home, it quickly became a competition between who googles the answers the fastest. So, I decided to make a script to google the answers as soon as my browser picks up the questions.</p>
+<p>Crowdpurr sends the data to and from the server using a single websocket connection. This is created as soon as your page loads. So my idea was, to be able to pick up the questions, I need to add my own listener to the websocket. To do that, I used a tool called Tampermonkey.</p>
+<p>Tampermonkey is a userscript manager that lets you run Javascript on the browser.</p>
+<pre><code>// ==UserScript==
+// @name         Crwdlive script
+// @include      /^https://crowd.live
+// @include      /^https://www.crowd.live
+// @run-at       document-start
+// @grant        none
+// ==/UserScript==
+</code></pre>
+<p>The <code>@include</code> directive tells the script to only run on the specified domain, while the <code>@run-at</code> directive tells the script when to run.</p>
+<p>To get the websocket object, I simply wrapped the <code>WebSocket</code> constructor around a new function where I store a reference of the websocket object in the window so I can play around with it. Now, whenever the constructor is called, the function will add the socket instance into our <code>window</code>.</p>
+<pre><code>window.mysocket = undefined;
+const nativeWebSocket = window.WebSocket;
+window.WebSocket = function(...args){
+  const socket = new nativeWebSocket(...args);
+  window.mysocket = socket;
+  return socket;
+};
+</code></pre>
+<p>Now that we already have the socket, we can now do things with it! In my case, I simply added a listener that picks up the question in the json body and adds the query in a google URL.</p>
+<pre><code>  window.mysocket.addEventListener('message', eventListener);
+</code></pre>
+<pre><code>const eventListener = function (event) {
+let jsonData = event.data.substring(2);
+jsonData = jsonData.slice(0, -1);
+jsonData = JSON.parse(jsonData);
+jsonData = JSON.parse(jsonData);
+if (jsonData.msg == 'result') {
+    let result = jsonData.result;
+    if (result &#x26;&#x26; typeof result.forEach === 'function') {
+        result.forEach(item => {
+            if ('questionType' in item) {
+                console.log(item.body);
+                const google = "https://www.google.com/search?q=" + item.body;
+                setTimeout(() => {
+                    window.open(encodeURI(google));
+                }, 500);
+            }
+        });
+    }
+}
+};
+</code></pre>
+<p>You can play around with the websocket object as you like. In my case, I was able to request questions ahead of time by sending the same requests the app would do!</p>
+5:["$","div",null,{"className":"min-h-screen bg-white text-neutral-950","children":[["$","div",null,{"className":"pointer-events-none fixed inset-0 -z-10","children":[["$","div",null,{"className":"absolute inset-0 bg-gradient-to-b from-white via-white to-zinc-50"}],["$","div",null,{"className":"absolute left-1/2 top-[-240px] h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-blue-200/35 blur-3xl"}],["$","div",null,{"className":"absolute left-[20%] top-[240px] h-[420px] w-[420px] rounded-full bg-emerald-200/25 blur-3xl"}]]}],["$","main",null,{"className":"mx-auto w-full max-w-3xl px-6 py-16 sm:py-20","children":[["$","div",null,{"className":"flex items-center justify-between","children":[["$","$Le",null,{"href":"/blog","className":"inline-flex h-10 items-center justify-center rounded-full border border-neutral-200 bg-white px-4 text-sm font-medium text-neutral-900 shadow-sm transition hover:bg-neutral-50","children":"← Blog"}],["$","$Le",null,{"href":"/","className":"inline-flex h-10 items-center justify-center rounded-full border border-neutral-200 bg-white px-4 text-sm font-medium text-neutral-900 shadow-sm transition hover:bg-neutral-50","children":"Home"}]]}],["$","article",null,{"className":"mt-10 overflow-hidden rounded-3xl border border-neutral-200 bg-white shadow-sm","children":[["$","header",null,{"className":"border-b border-neutral-100 p-6 sm:p-8","children":[["$","div",null,{"className":"text-xs text-neutral-500","children":"May 19, 2020"}],["$","h1",null,{"className":"mt-2 text-3xl font-semibold tracking-tight","children":"Accessing websocket data using userscripts"}],["$","div",null,{"className":"mt-4 flex flex-wrap gap-2","children":[["$","span","javascript",{"className":"rounded-full border border-neutral-200 bg-white px-2.5 py-1 text-[11px] text-neutral-700","children":"javascript"}],["$","span","userscripts",{"className":"rounded-full border border-neutral-200 bg-white px-2.5 py-1 text-[11px] text-neutral-700","children":"userscripts"}]]}]]}],["$","div",null,{"className":"prose prose-neutral blog-prose max-w-none p-6 sm:p-8 prose-headings:tracking-tight prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline","dangerouslySetInnerHTML":{"__html":"$f"}}]]}],"$L10"]}]]}]
+10:["$","nav",null,{"className":"mt-8 flex items-center justify-between gap-4 text-sm","children":[["$","div",null,{"children":["$","$Le",null,{"className":"text-neutral-700 hover:underline","href":"/blog/nginx-consul","children":["← ","Setting up an NGINX proxy using consul-template and puppet"]}]}],["$","div",null,{"className":"text-right","children":["$","$Le",null,{"className":"text-neutral-700 hover:underline","href":"/blog/container-issues","children":["Disk quota exceeded error in docker containers"," →"]}]}]]}]
+a:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+11:I[27201,["/openclaw-landing/_next/static/chunks/ff1a16fafef87110.js","/openclaw-landing/_next/static/chunks/d2be314c3ece3fbe.js"],"IconMark"]
+8:null
+c:[["$","title","0",{"children":"Accessing websocket data using userscripts · Blog"}],["$","meta","1",{"name":"description","content":"Blog post from 2020-05-19: Accessing websocket data using userscripts"}],["$","meta","2",{"name":"robots","content":"index, follow"}],["$","meta","3",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","4",{"rel":"canonical","href":"https://gabrnavarro.github.io/openclaw-landing/"}],["$","meta","5",{"property":"og:title","content":"Kelly Navarro — Site Reliability Engineer"}],["$","meta","6",{"property":"og:description","content":"SRE with 7+ years running large-scale game and web infrastructure across AWS, GCP, and Azure."}],["$","meta","7",{"property":"og:url","content":"https://gabrnavarro.github.io/openclaw-landing/"}],["$","meta","8",{"property":"og:site_name","content":"Kelly Navarro"}],["$","meta","9",{"property":"og:type","content":"website"}],["$","meta","10",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","11",{"name":"twitter:title","content":"Kelly Navarro — Site Reliability Engineer"}],["$","meta","12",{"name":"twitter:description","content":"SRE with 7+ years running large-scale game and web infrastructure across AWS, GCP, and Azure."}],["$","link","13",{"rel":"icon","href":"/openclaw-landing/favicon.ico?favicon.0b3bf435.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L11","14",{}]]
