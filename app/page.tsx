@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function Icon({ id, className }: { id: string; className?: string }) {
   return (
@@ -112,6 +113,12 @@ export default function Home() {
               >
                 Say hi
               </a>
+              <Link
+                className="inline-flex h-11 items-center justify-center rounded-full border border-neutral-200 bg-white px-5 text-sm font-medium text-neutral-900 shadow-sm transition hover:bg-neutral-50"
+                href="/blog"
+              >
+                Blog
+              </Link>
             </div>
 
             <ul className="space-y-2 text-sm leading-6 text-neutral-600">

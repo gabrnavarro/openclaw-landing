@@ -75,4 +75,54 @@
     box-shadow: 0 14px 28px rgba(2, 6, 23, 0.08);
     border-color: rgba(15, 23, 42, 0.18);
   }
+
+  /* Blog typography tweaks (applies to all posts) */
+  .blog-prose :where(p):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+    margin-top: 0.9em;
+    margin-bottom: 0.9em;
+    line-height: 1.75;
+  }
+
+  .blog-prose :where(pre):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+    background: #0b0b0c; /* matte black */
+    color: #eaeaea;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 1rem 1.1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  }
+
+  .blog-prose :where(code):not(:where(pre code, [class~="not-prose"], [class~="not-prose"] *)) {
+    background: rgba(11, 11, 12, 0.06);
+    border: 1px solid rgba(2, 6, 23, 0.08);
+    border-radius: 8px;
+    padding: 0.15rem 0.35rem;
+    font-size: 0.9em;
+  }
+
+  .blog-prose :where(pre code):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    color: inherit;
+    font-size: 0.9em;
+  }
+}
+
+/* Fallback (non-Tailwind-layer) overrides in case typography defaults win */
+.blog-prose pre {
+  /* slightly matte (not pitch black) */
+  background: #121316 !important;
+  color: #eaeaea !important;
+}
+
+.blog-prose pre code {
+  background: transparent !important;
+  color: inherit !important;
+}
+
+.blog-prose p {
+  margin-top: 0.9em;
+  margin-bottom: 0.9em;
+  line-height: 1.75;
 }
