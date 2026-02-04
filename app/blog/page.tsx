@@ -25,7 +25,7 @@ export default function BlogIndexPage() {
           <div>
             <h1 className="text-3xl font-semibold tracking-tight">Blog</h1>
             <p className="mt-2 text-sm text-neutral-600">
-              Writing archive — migrated from the previous gabrnavarro-blog.
+              Writing archive.
             </p>
           </div>
           <Link

@@ -192,8 +192,9 @@ export default function Home() {
           <div className="rounded-3xl border border-neutral-200 bg-white p-8 shadow-sm">
             <h2 className="text-xl font-semibold tracking-tight">Contact</h2>
             <p className="mt-2 max-w-2xl text-sm leading-6 text-neutral-600">
-              For now this is a static page. Next step: add links (GitHub, LinkedIn), a projects
-              section, and maybe a tiny “patch notes” feed.
+              Github: gabrnavarro
+              Email: gabrnavarro@gmail.com
+              Linkedin: gkhnavarro
             </p>
             <div className="mt-6 flex flex-wrap gap-2">
               <Pill>
