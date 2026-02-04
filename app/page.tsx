@@ -101,18 +101,6 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col gap-3 pt-4 sm:flex-row sm:items-center">
-              <a
-                className="inline-flex h-11 items-center justify-center rounded-full bg-neutral-900 px-5 text-sm font-medium text-white shadow-sm transition hover:bg-neutral-800"
-                href="#work"
-              >
-                See highlights
-              </a>
-              <a
-                className="inline-flex h-11 items-center justify-center rounded-full border border-neutral-200 bg-white px-5 text-sm font-medium text-neutral-900 shadow-sm transition hover:bg-neutral-50"
-                href="#contact"
-              >
-                Say hi
-              </a>
               <Link
                 className="inline-flex h-11 items-center justify-center rounded-full border border-neutral-200 bg-white px-5 text-sm font-medium text-neutral-900 shadow-sm transition hover:bg-neutral-50"
                 href="/blog"
