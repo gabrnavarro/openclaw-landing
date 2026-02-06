@@ -62,6 +62,23 @@
     animation-delay: 400ms;
   }
 
+  /* Scroll-triggered reveal */
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    filter: blur(4px);
+    transition:
+      opacity 600ms cubic-bezier(0.16, 1, 0.3, 1),
+      transform 600ms cubic-bezier(0.16, 1, 0.3, 1),
+      filter 600ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .scroll-reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+
   /* Hover polish */
   .card-hover {
     transition:
@@ -74,6 +91,13 @@
     transform: translateY(-4px);
     box-shadow: 0 14px 28px rgba(2, 6, 23, 0.08);
     border-color: rgba(15, 23, 42, 0.18);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .card-hover:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.3);
+      border-color: rgba(255, 255, 255, 0.12);
+    }
   }
 
   /* Blog typography tweaks (applies to all posts) */
@@ -90,6 +114,7 @@
     border-radius: 14px;
     padding: 1rem 1.1rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+    overflow-x: auto;
   }
 
   .blog-prose :where(code):not(:where(pre code, [class~="not-prose"], [class~="not-prose"] *)) {
@@ -98,6 +123,13 @@
     border-radius: 8px;
     padding: 0.15rem 0.35rem;
     font-size: 0.9em;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .blog-prose :where(code):not(:where(pre code, [class~="not-prose"], [class~="not-prose"] *)) {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.1);
+    }
   }
 
   .blog-prose :where(pre code):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
@@ -125,4 +157,27 @@
   margin-top: 0.9em;
   margin-bottom: 0.9em;
   line-height: 1.75;
+}
+
+/* Shiki syntax highlighting tokens */
+.blog-prose pre code .line {
+  display: inline;
+}
+
+/* Dark-mode prose overrides */
+@media (prefers-color-scheme: dark) {
+  .blog-prose {
+    --tw-prose-body: #d4d4d4;
+    --tw-prose-headings: #f5f5f5;
+    --tw-prose-links: #60a5fa;
+    --tw-prose-bold: #f5f5f5;
+    --tw-prose-counters: #a3a3a3;
+    --tw-prose-bullets: #a3a3a3;
+    --tw-prose-hr: rgba(255, 255, 255, 0.1);
+    --tw-prose-quotes: #d4d4d4;
+    --tw-prose-quote-borders: rgba(255, 255, 255, 0.1);
+    --tw-prose-code: #e5e5e5;
+    --tw-prose-th-borders: rgba(255, 255, 255, 0.1);
+    --tw-prose-td-borders: rgba(255, 255, 255, 0.06);
+  }
 }

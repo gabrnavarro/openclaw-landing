@@ -20,6 +20,9 @@ export const metadata: Metadata = {
     "SRE with 7+ years running large-scale game and web infrastructure across AWS, GCP, and Azure. Sony (Concord), PAYDAY 3, Freelancer.com.",
   alternates: {
     canonical: "/openclaw-landing/",
+    types: {
+      "application/rss+xml": "/openclaw-landing/feed.xml",
+    },
   },
   robots: {
     index: true,

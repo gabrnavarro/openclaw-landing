@@ -14,9 +14,15 @@ export type BlogPost = {
   date: string; // ISO
   tags: string[];
   content: string;
+  readingTime: number; // minutes
 };
 
 const BLOG_DIR = path.join(process.cwd(), "content", "blog");
+
+function estimateReadingTime(text: string): number {
+  const words = text.trim().split(/\s+/).length;
+  return Math.max(1, Math.round(words / 230));
+}
 
 function assertBlogDir() {
   if (!fs.existsSync(BLOG_DIR)) {
@@ -63,11 +69,14 @@ export function getPostBySlug(slug: string): BlogPost {
       ? [String(data.tags)]
       : [];
 
+  const content = parsed.content.trim() + "\n";
+
   return {
     slug,
     title: String(data.title),
     date: String(data.date),
     tags,
-    content: parsed.content.trim() + "\n",
+    content,
+    readingTime: estimateReadingTime(content),
   };
 }
